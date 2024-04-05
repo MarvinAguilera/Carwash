@@ -6,5 +6,5 @@ public interface TipoVehiculoService {
     
     public TipoVehiculo crearTipoVehiculo(TipoVehiculo tipoVehiculo);
 
-    public TipoVehiculo eliminarVehiculoPorId(long idTipoVehiculo);
+    public String eliminarVehiculoPorId(long idTipoVehiculo);
 }

@@ -10,5 +10,5 @@ public interface VehiculoService {
 
     public List<Vehiculo> obtenerVehiculos();
 
-    public Vehiculo obtenerVehiculoPorId(Integer idVehiculo );
+    public Vehiculo obtenerVehiculoPorId(Long idVehiculo );
 }

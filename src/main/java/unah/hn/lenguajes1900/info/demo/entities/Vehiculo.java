@@ -21,7 +21,7 @@ public class Vehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idvehiculo")
-    private int idVehiculo;
+    private long idVehiculo;
 
     private String marca;
     private int anio;

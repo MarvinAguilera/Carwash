@@ -21,16 +21,13 @@ public class TipoVehiculoServiceImpl implements TipoVehiculoService {
     }
 
     @Override
-    public TipoVehiculo eliminarVehiculoPorId(long idTipoVehiculo) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarVehiculoPorId'");
+    public String eliminarVehiculoPorId(long idTipoVehiculo) {
+      if(this.tipoVehiculoRepository.findById(idTipoVehiculo).isPresent()){
+        this.tipoVehiculoRepository.deleteById(idTipoVehiculo);;
+        return "vehiculo eliminado";
+      }
+      return "vehiculo no encontrado";
+
     }
 
-    public unah.hn.lenguajes1900.info.demo.controllers.TipoVehiculo crearTipoVehiculo(
-            unah.hn.lenguajes1900.info.demo.controllers.TipoVehiculo tipoVehiculo) {
-        return null;
-    }
-
-  
-    
 }

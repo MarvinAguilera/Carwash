@@ -18,10 +18,10 @@ public class Reserva {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idreserva")
-    private int idReserva;
+    private long idReserva;
 
     private LocalDate fecha;
-    private int dias;
+    private long dias;
     private Double total;   
     
     @Column(name = "idcliente")

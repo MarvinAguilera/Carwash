@@ -26,9 +26,11 @@ public class VehiculoServiceImpl implements VehiculoService{
     }
 
     @Override
-    public Vehiculo obtenerVehiculoPorId(Integer idVehiculo) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'obtenerVehiculoPorId'");
+    public Vehiculo obtenerVehiculoPorId(long idVehiculo) {
+        if(this.vehiculoRepository.findById(idVehiculo).isPresent()){
+            return this.vehiculoRepository.findById(idVehiculo).get();
+        }
+        return null;
     }
     
 }

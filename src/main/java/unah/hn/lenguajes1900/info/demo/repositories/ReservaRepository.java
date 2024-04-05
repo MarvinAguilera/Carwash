@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import unah.hn.lenguajes1900.info.demo.entities.Reserva;
 
 @Repository
-public interface ReservaRepository extends CrudRepository<Reserva,Integer> {
+public interface ReservaRepository extends CrudRepository<Reserva,Long> {
     
 }
