@@ -4,5 +4,7 @@ import unah.hn.lenguajes1900.info.demo.entities.TipoVehiculo;
 
 public interface TipoVehiculoService {
     
-    public TipoVehiculo creaTipoVehiculo(TipoVehiculo tipoVehiculo);
+    public TipoVehiculo crearTipoVehiculo(TipoVehiculo tipoVehiculo);
+
+    public TipoVehiculo eliminarVehiculoPorId(long idTipoVehiculo);
 }

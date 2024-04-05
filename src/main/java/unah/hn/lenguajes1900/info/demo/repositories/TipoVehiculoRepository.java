@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import unah.hn.lenguajes1900.info.demo.entities.TipoVehiculo;
 
 @Repository
-public interface TipoVehiculoRepository extends CrudRepository<TipoVehiculo, Integer>{
+public interface TipoVehiculoRepository extends CrudRepository<TipoVehiculo, Long>{
     
 }
