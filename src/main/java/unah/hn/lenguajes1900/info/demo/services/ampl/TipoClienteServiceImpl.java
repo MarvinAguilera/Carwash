@@ -14,8 +14,10 @@ public class TipoClienteServiceImpl implements TipoClienteService  {
     private TipoClienteRepository tipoClienteRepository;
 
     @Override
-    public TipoCliente crearTipoCliente(TipoCliente tipoCliente) {
-     return this.tipoClienteRepository.save(tipoCliente);
+    public TipoCliente crearTipoCliente(String descripcion) {
+        TipoCliente nvoTipoCliente = new TipoCliente();
+        nvoTipoCliente.setDescripcion(descripcion);
+        return this.tipoClienteRepository.save(nvoTipoCliente);
     }
 
     

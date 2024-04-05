@@ -22,8 +22,8 @@ public class TipoClienteController {
     private TipoClienteServiceImpl tipoClienteServiceImpl;
 
     @PostMapping("/crear/tipoCliente")
-    public TipoCliente creaTipoCliente(@RequestBody TipoCliente tipoCliente ) {
-        return this.tipoClienteServiceImpl.crearTipoCliente(tipoCliente);
+    public TipoCliente creaTipoCliente(@RequestParam String descripcion ) {
+        return this.tipoClienteServiceImpl.crearTipoCliente(descripcion);
     }
     
 

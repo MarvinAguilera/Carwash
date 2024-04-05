@@ -4,7 +4,7 @@ import unah.hn.lenguajes1900.info.demo.entities.TipoCliente;
 
 public interface TipoClienteService {
     
-    public TipoCliente crearTipoCliente(TipoCliente tipoCliente);
+    public TipoCliente crearTipoCliente(String descripcion);
 
     
 
